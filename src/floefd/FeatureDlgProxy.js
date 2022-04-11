@@ -10,8 +10,9 @@ class FeatureDlg {
     }
 
     onComboSelectionChange(currSel) {
-        console.log(`onComboSelectionChange(${currSel})`);
-        this.interpolate = (currSel === 1);
+        // console.log(`onComboSelectionChange(${currSel})`);
+        this.formState.contoursParam = currSel;
+        this.formState.interpolate = (this.formState.contoursParam === 1);
     }
 }
 
