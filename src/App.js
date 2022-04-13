@@ -7,7 +7,8 @@ import LeftPanel from './components/LeftPanel';
 import SplitPane from 'react-split-pane.js';
 // import FeatureView from './Feature';
 
-function App() {
+function App()
+{
     return (
         <div>
             <AppBar position='static'>
@@ -19,7 +20,8 @@ function App() {
                         sx={{ mr: 2 }}
                     >
                         <Menu />
-                    </IconButton>                    <Typography variant='h5' component="span">FLOEFD Viewer</Typography>
+                    </IconButton>
+                    <Typography variant='h5' component="span">FLOEFD Viewer</Typography>
                 </Toolbar>
             </AppBar>
             <SplitPane split="vertical" defaultSize={300} minSize={50}>
